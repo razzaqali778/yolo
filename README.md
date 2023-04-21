@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+/**Game and Customer Data Management App**/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This ReactJS application allows you to manage data for games and customers. You can view, filter, add, edit, and delete data using the application. The data is displayed in tables, and you can filter it based on the date range and category.
 
-## Available Scripts
+Table of Contents
+Getting Started
+Usage
+Features
+Contributing
+License
+Getting Started
 
-In the project directory, you can run:
+To get started with the application, clone the repository to your local machine:
 
-### `npm start`
+Then, install the dependencies by running:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+cd yolo npm install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Finally, start the development server by running:
 
-### `npm test`
+npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This should open the application in your default browser at http://localhost:3000.
 
-### `npm run build`
+Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The application consists of two tables: one for games and one for customers. You can switch between them using the navigation menu on the left.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Viewing Data
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+By default, the tables display all the data for games and customers. You can filter the data based on the date range and category by selecting the appropriate options in the filter form above the table.
 
-### `npm run eject`
+Adding Data
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To add new data to the table, click on the "Add New" button above the table. This will open a form where you can enter the details for the new game or customer.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Editing Data
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To edit an existing item in the table, click on the "Edit" button in the corresponding row. This will open a form where you can update the details for the game or customer.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Deleting Data
 
-## Learn More
+To delete an existing item in the table, click on the "Delete" button in the corresponding row. This will remove the item from the table.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The application includes the following features:
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Two tables for displaying games and customers data
+Filter form for filtering data based on the date range and category
+Add form for adding new games or customers to the table
+Edit form for updating existing games or customers in the table
+Delete button for removing games or customers from the table
