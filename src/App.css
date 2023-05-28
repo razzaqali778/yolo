@@ -1,0 +1,29 @@
+.app {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+ }
+    
+    
+ 
+ .appContainer {
+    flex: 1;
+    margin-left: 180px;
+    background: #586685;
+    overflow-y: auto;
+    padding: 20px;
+    height: 100vh;
+ }
+ 
+ 
+hr {
+    border: .5px solid #cdb6b6;
+    margin-bottom: 50px;
+ }
+
+ @media(max-width: 900px){
+   .appContainer{
+      margin-left: 80px;
+   }
+   
+ }
