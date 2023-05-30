@@ -1,0 +1,172 @@
+
+
+ 
+.sidebar {
+    
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #428196;
+    color: #eee;
+    z-index: 9999;
+    
+ }
+   
+    /* Sidebar - top */
+ 
+ .sidebar .top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+ } 
+    
+    /* Sidebar - logo */
+   
+ .sidebar .logo {
+    align-items: center;
+    display: flex;
+ }
+ 
+ .sidebar .logo img {
+    height: 50px;
+    margin-right: 10px;
+    width: 50px;
+    border-radius: 50%;
+ }
+ 
+ .sidebar .logo span {
+    font-size: 20px;
+    font-weight: bold;
+ } 
+ 
+    /* Sidebar - close */
+  
+ .sidebar .close {
+    cursor: pointer;
+ }
+   
+    /* Sidebar - center */
+ 
+.center {
+    margin-top: 20px;
+ }
+ 
+ .sidebar .title {
+    color: #ccc;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 20px;
+ }
+ 
+ .sidebar ul {
+    list-style: none;
+    padding-left: 0;
+ }
+ 
+ .sidebar li {
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+ }
+ 
+ .sidebar li:hover {
+    background-color: #26abb5;
+
+ }
+ 
+ .sidebar .icon {
+    margin-right: 10px;
+    color: #111a86;
+ }
+ 
+ .sidebar span {
+    flex: 1;
+    color: #edeaea;
+ } 
+ /* Sidebar - bottom */
+    
+   
+ .sidebar .bottom {
+    bottom: 0;
+    position: absolute;
+    width: 50%;
+ }
+ 
+ .sidebar .color {
+    background-color: #fff;
+    height: 10px;
+    width: 100%;
+ } 
+ 
+
+
+ @media (max-width: 768px) {
+   
+    .sidebar {
+       width: 20px;
+       z-index: 999;
+       height: 100vh;   
+   } 
+
+
+  .sidebar .logo span {
+   display: none;
+}
+
+.sidebar .center {
+   margin-top: 50px;
+}
+
+.sidebar .title {
+   margin-left: 0;
+}
+
+.sidebar li {  
+   width: 80px;
+   text-align: center;
+  
+}
+
+.sidebar .icon {
+   margin-right: 0;
+   margin-bottom: 10px;
+}
+
+
+  
+}
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+    .sidebar {
+      width: 80px;
+    }
+   .sidebar span{
+        display: none;
+  
+    }
+  
+   .sidebar p, li{
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+     
+    }
+    .sidebar li{
+      padding: 0;
+    }
+  }
+
+  

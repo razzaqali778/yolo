@@ -1,0 +1,52 @@
+.home {
+   display: flex;
+   flex-wrap: wrap;
+   height: 100vh;
+}
+      
+ 
+
+
+hr {
+   border: .5px solid #cdb6b6;
+   margin-bottom: 50px;
+}
+  
+  
+       
+  
+.widgets {
+   /* display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between; */
+   margin-top: 80px;
+}
+
+.listTitle>h2 {
+   color: #fff;
+   font-size: 18px;
+   font-weight: 700;
+}
+
+.filterItem>label>span{
+   font-size: 15px;
+   font-weight: 600;
+   margin-left: 40px;
+   color: #fff;
+  
+}
+
+.filterItem>label>p{
+   margin: 0 8px !important;
+   font-weight: 600;
+   font-size: 15px;
+}
+
+
+@media only screen and (max-width: 900px){
+   .filterItem span{
+      font-size: 10px;
+      
+   }
+}
+

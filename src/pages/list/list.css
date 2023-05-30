@@ -1,0 +1,114 @@
+.uTable {
+    margin-left: 50px;
+}
+
+.filterItem>span {
+    color: white !important;
+    margin-left: 50px;
+    font-weight: 500;
+}
+
+.filterItem>select {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.filterItem>input {
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.filter-btn {
+    /* width:80%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;;
+    position: relative;
+}
+
+.filterItem {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .filterItem {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .filterItem span {
+        margin-right: 1rem;
+    }
+
+    .filterItem button {
+        margin-left: 1rem;
+    }
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        }
+       
+    /* .addBtn {
+            margin-left: 20px;
+            width: 100px;
+            height: 50px;
+        
+        }     */
+  
+}
+
+@media (max-width: 768px) {
+     .top {
+     display: block;
+     text-align: center;
+     margin-bottom: 20px;
+     }
+
+ .filter-btn {
+       display: flex;
+       flex-direction: column;
+     
+           
+         
+}
+.filterItem>input {
+    width: 90px;
+    
+}
+
+
+.filterItem {
+    display: flex;
+    flex-direction: row;
+}
+
+.filterItem>span{
+    margin-right: 20px;
+}
+.filterItem>button {
+    margin-right: 20px;
+    align-items: center;
+}
+
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: .2em;
+    padding: 0.5px;
+}
+
+.uTable{
+    margin: 0;
+}
+    }
+    

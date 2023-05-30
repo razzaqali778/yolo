@@ -1,0 +1,224 @@
+.board {
+    width: 100%;
+    margin: 30px 0 30px 5px;
+    overflow: auto;
+    background: #fff;
+    border-radius: 8px;
+    border: .5px solid rgb(216, 200, 200);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+     /* margin: 0 auto; */
+
+    overflow: visible;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 1rem;
+    background: #fff;
+}
+
+thead {
+    background-color: #f8f9fa;
+}
+
+th,
+    td {
+    padding: 0.55rem;
+    text-align: left;
+    vertical-align: middle;
+    border: 1px solid #dee2e6;
+}
+
+th {
+    font-weight: 700;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f8f9fa;
+}
+
+.people {
+    display: flex;
+    align-items: center;
+}
+
+.people-de {
+    margin-left: 0.5rem;
+}
+
+.people-de h5 {
+    margin-bottom: 0;
+}
+
+.people-des h5 {
+    margin-bottom: 0;
+}
+
+.status {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 0.2rem;
+}
+
+.status.Approved {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.status.Pending {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+@media only screen and (max-width: 767px) {
+    .board table {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .board th, .board td {
+        display: block;
+        padding: 0 10px;
+    }
+
+    .board th:first-child, .board td:first-child {
+        padding-top: 10px;
+    }
+
+    .board th:last-child, .board td:last-child {
+        padding-bottom: 10px;
+    }
+
+    .board td:before {
+        content: attr(data-label);
+        display: inline-block;
+        font-weight: bold;
+        margin-right: 5px;
+    }
+
+
+    .board{
+        margin: 0 auto;
+    }
+}
+        
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .board table {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .board th, .board td {
+        padding: 10px;
+    }
+
+    .board td:before {
+        content: attr(data-label);
+        display: inline-block;
+        font-weight: bold;
+        margin-right: 5px;
+    }
+}
+        
+@media only screen and (min-width: 1024px) {
+    .board table {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .board th, .board td {
+        padding: 10px;
+    }
+
+    .board td:before {
+        content: attr(data-label);
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .board table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+    }
+
+    .board table thead {
+        display: none;
+    }
+
+    .board table tbody {
+        display: block;
+        width: 100%;
+    }
+
+    .board table tbody tr {
+        display: block;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .board table tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .board table tbody td {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        border-bottom: none;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .board table tbody td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 13px;
+        text-align: left;
+    }
+}
+            
+@media only screen and (min-width: 601px) {     
+    .board table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+    }
+
+    .board table thead {
+        background-color: #f2f2f2;
+    }
+
+    .board table th {
+        text-align: left;
+        padding: 12px;
+    }
+
+    .board table td {
+        text-align: left;
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .board table tr:hover {
+        background-color: #f5f5f5;
+    }
+}
